@@ -24,7 +24,7 @@ dnf install -y tmux
 systemctl enable podman.socket
 
 # Add keyd
-dnf5 -y copr enable alternatived/keyd
+dnf5 -y copr enable alternateved/keyd
 dnf5 -y install keyd
 # Disable COPRs so they don't end up enabled on the final image:
-dnf5 -y copr disable alternatived/keyd
+dnf5 -y copr disable alternateved/keyd
