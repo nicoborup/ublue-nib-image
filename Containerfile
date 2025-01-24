@@ -8,7 +8,7 @@
 # Universal Blue Images: https://github.com/orgs/ublue-os/packages
 # Fedora base image: quay.io/fedora/fedora-bootc:41
 # CentOS base images: quay.io/centos-bootc/centos-bootc:stream10
-FROM ghcr.io/ublue-os/aurora-dx:40
+FROM ghcr.io/ublue-os/aurora-dx:latest
 
 ### MODIFICATIONS
 ## make modifications desired in your image and install packages by modifying the build.sh script
