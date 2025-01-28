@@ -28,3 +28,7 @@ dnf5 -y copr enable alternateved/keyd
 dnf5 -y install keyd
 # Disable COPRs so they don't end up enabled on the final image:
 dnf5 -y copr disable alternateved/keyd
+
+
+# Add NetworkManager-l2tp
+dnf5 install -y NetworkManager-l2tp
