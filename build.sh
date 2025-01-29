@@ -31,10 +31,10 @@ dnf5 -y copr disable alternateved/keyd
 
 # Add NetworkManager-l2tp
 dnf5 install -y NetworkManager-l2tp strongswan
-rpm -e --nodeps libreswan || echo ""
+#rpm -e --nodeps libreswan || echo ""
 
 # Add tilix terminal emulator
-dnf5 install -y epel-release
+#dnf5 install -y epel-release
 dnf5 install -y tilix
 
 # Add corectrl
