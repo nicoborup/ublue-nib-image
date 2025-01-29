@@ -32,3 +32,5 @@ dnf5 -y copr disable alternateved/keyd
 
 # Add NetworkManager-l2tp
 dnf5 install -y NetworkManager-l2tp
+dnf5 install strongswan
+rpm -e libreswan
