@@ -16,6 +16,8 @@ FROM ghcr.io/ublue-os/aurora-dx:stable
 
 COPY build.sh /tmp/build.sh
 
-RUN mkdir -p /var/lib/alternatives && \
+RUN --mount=type=cache,dst=/var/cache \
+    --mount=type=cache,dst=/var/log \
+    --mount=type=tmpfs,dst=/tmp \
     /tmp/build.sh && \
     ostree container commit
