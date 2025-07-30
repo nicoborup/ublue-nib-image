@@ -35,3 +35,6 @@ dnf5 install -y NetworkManager-l2tp strongswan
 
 # Add tilix terminal emulator
 dnf5 install -y tilix
+
+# Add tilix terminal emulator
+dnf5 install -y minicom
