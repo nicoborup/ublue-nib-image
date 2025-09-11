@@ -42,4 +42,4 @@ dnf5 install -y minicom
 
 # Install Brother printer driver
 curl --retry 3 -Lo /tmp/rpms/brother-printer-driver.rpm https://download.brother.com/welcome/dlf101090/mfcl8650cdwlpr-1.1.2-1.i386.rpm
-dnf5 install -y /tmp/rpms/*
+rpm  -ihv  --nodeps  /tmp/rpms/brother-printer-driver.rpm
