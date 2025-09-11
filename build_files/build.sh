@@ -3,6 +3,7 @@
 set -ouex pipefail
 
 ### Install packages
+mkdir -p /tmp/rpms
 
 # Packages can be installed from any enabled yum repo on the image.
 # RPMfusion repos are available by default in ublue main images
@@ -38,3 +39,7 @@ dnf5 install -y tilix
 
 # Add tilix terminal emulator
 dnf5 install -y minicom
+
+# Install Brother printer driver
+curl --retry 3 -Lo /tmp/rpms/brother-printer-driver.rpm https://download.brother.com/welcome/dlf101090/mfcl8650cdwlpr-1.1.2-1.i386.rpm
+dnf5 install -y /tmp/rpms/*
